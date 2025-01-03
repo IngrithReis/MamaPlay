@@ -58,7 +58,7 @@ header {
 .header-buttons {
     display: flex;
     flex-direction: column; /* Organiza os botões um acima do outro */
-    gap: 50px; /* Ajuste o espaço entre os botões */
+    gap: 20px; /* Ajuste o espaço entre os botões */
     align-items: flex-start; /* Alinha os botões à esquerda */
 }
 
