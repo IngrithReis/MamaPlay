@@ -1,0 +1,70 @@
+.navbar {
+    padding-top: 5px;  /* Diminuindo o padding superior */
+    padding-bottom: 5px;  /* Diminuindo o padding inferior */
+    position: relative;
+}
+
+
+/* Ajustando o tamanho das fontes e o espaçamento dos itens da navbar */
+.navbar-nav .nav-item .nav-link {
+    padding-top: 8px; /* Ajustando o padding superior dos links */
+    padding-bottom: 8px; /* Ajustando o padding inferior dos links */
+    font-size: 24px; /* Ajustando o tamanho da fonte */
+}
+
+img.img-fluid.rounded-circle {
+    width: 200px; /* Definindo o tamanho da imagem */
+    height: 200px;
+    object-fit: cover; /* Garante que a imagem seja cortada de forma proporcional */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+/* Ajuste de margem na parte superior para a área de conteúdo */
+.container {
+    margin-top: 80px; /* Ajusta a distância para a navbar fixa */
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.row a{
+    margin-top: 10px;
+    text-decoration: none;
+     color: #050607;
+     
+}
+.custom-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    
+    background-color: #fad46b; /* Cor de fundo do botão */
+    border-radius: 5px;
+    text-decoration: none; /* Remover o sublinhado */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-link:hover {
+    background-color: #0056b3; /* Cor de fundo quando passar o mouse */
+    transform: scale(1.05); /* Aumenta um pouco o tamanho do botão */
+}
+.center-title {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-top: 100px; /* Dá um pequeno espaço de topo */
+}
+.img-game{
+    width: 500px; /* Definindo o tamanho da imagem */
+    height: 200px;
+    object-fit: cover; /* Garante que a imagem seja cortada de forma proporcional */
+    margin-bottom: 20px; 
+
+}
+.politica{
+    margin-left: 40px;
+}

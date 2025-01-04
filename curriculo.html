@@ -1,49 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="Content-Language" content="pt-br">
     <title>MamaPlay</title>
+    <!-- Font Google -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Seu arquivo CSS (caso tenha) -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <img src="perfil.jpg" alt="Foto de Perfil" class="profile-image">
-        <div class="header-buttons">
-            <button onclick="window.location.href='index.html'">Sobre</button>
-            <button onclick="window.location.href='portifolio.html'">Portifólio</button>
-            <button onclick="window.location.href='curriculo.html'">Currículo</button>
-            <button onclick="window.location.href='app_politica.html'">Política</button>
-        </div>
-    </header>
 
-    <section class="main-content">
-        
-        <section class="contact-info">
-            <h1>Currículo</h1>
-            <h2 class="curriculoh2">Informações de Contato</h2>
-            <p><strong>Nome:</strong> Ingrith Fernandes dos Reis</p>
-            <p><strong>Base Residencial:</strong> Guarulhos/SP</p>
-            <p><strong>Celular:</strong> (11) 96624-1609</p>
-            <p><strong>Email:</strong> <a href="mailto:ingrith.reis@hotmail.com">ingrith.reis@hotmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ingrithreis/" target="_blank">linkedin.com/in/ingrithreis/</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/IngrithReis" target="_blank">github.com/IngrithReis</a></p>
-        </section>
+<body class="d-flex flex-column min-vh-100"> <!-- Garante que o body ocupe 100% da altura da tela -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="curriculo.html">Currículo</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="jogo.html">Jogo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+
+        <div class="container">
     
-        <section class="summary">
-            <h2 class="curriculoh2">Resumo das Qualificações</h2>
+            <h1 class="text-center"> Ingrith F. dos Reis</h1>
+    
+            <div class="section-title">
+                <h2>Informações de Contato</h2>
+            </div>
+            <ul class="contact-info">
+                <li><span>Nome:</span> Ingrith Fernandes dos Reis</li>
+                <li><span>Base Residencial:</span> Guarulhos/SP</li>
+                <li><span>Celular:</span> (11) 96624-1609</li>
+                <li><span>Email:</span> <a href="mailto:ingrith.reis@hotmail.com">ingrith.reis@hotmail.com</a></li>
+                <li><span>LinkedIn:</span> <a href="https://linkedin.com/in/ingrithreis/" target="_blank">linkedin.com/in/ingrithreis/</a></li>
+                <li><span>GitHub:</span> <a href="https://github.com/IngrithReis" target="_blank">github.com/IngrithReis</a></li>
+            </ul>
+    
+            <div class="section-title">
+                <h2>Resumo das Qualificações</h2>
+            </div>
             <p>Sou formada em Análise e Desenvolvimento de Sistemas pelo Centro Universitário Senac, com experiência em programação, análise de dados e otimização de processos digitais.</p>
             <p>Na minha experiência mais recente como Agente Administrativo, atuei no gerenciamento de contratos administrativos e na implementação de práticas de proteção de dados, garantindo conformidade com a Nova Lei de Licitações.</p>
-            <p>Anteriormente, como Analista de Sistemas, fui responsável pelo monitoramento e melhoria de desempenho de APIs, além da administração de bancos de dados SQL Server.</p>
+            <p>Anteriores, como Analista de Sistemas, fui responsável pelo monitoramento e melhoria de desempenho de APIs, além da administração de bancos de dados SQL Server.</p>
             <p>Meu objetivo é contribuir com soluções tecnológicas inovadoras, participando de forma eficaz em projetos desafiadores para gerar impacto positivo e agregar valor às organizações.</p>
-        </section>
-    
-        <section class="skills">
-            <h2 class="curriculoh2">Skills</h2>
-            <ul>
+            <div class="section-title">
+                <h2>Skills</h2>
+            </div>
+            <ul class="skills-list">
                 <li>SQL Server</li>
                 <li>C#</li>
                 <li>ASP.NET</li>
@@ -52,39 +77,42 @@
                 <li>HTML</li>
                 <li>APIs</li>
             </ul>
-        </section>
     
-        <section class="education">
-            <h2>Formação Acadêmica</h2>
-            <p><strong>Tecnólogo em Análise e Desenvolvimento de Sistemas</strong> - Centro Universitário Senac</p>
-        </section>
+            <div class="section-title">
+                <h2>Formação Acadêmica</h2>
+            </div>
+            <h3>Tecnólogo em Análise e Desenvolvimento de Sistemas </h3>
+            <p>Centro Universitário Senac</p>
     
-        <section class="experience">
-            <h2 class="curriculoh2">Experiência Profissional</h2>
-            <ul>
-                <li><strong>Agente Administrativo</strong> - IPREF Guarulhos (07/2024 - Atual)
-                    <ul>
-                        <li>Auxílio no gerenciamento de contratos administrativos, garantindo o cumprimento dos prazos e das cláusulas contratuais.</li>
-                        <li>Colaboração em iniciativas para implementação de práticas de proteção de dados em ambientes digitais e físicos.</li>
-                    </ul>
-                </li>
-                <li><strong>Analista de Sistemas</strong> - Dogma Data (07/2021 - 07/2022)
-                    <ul>
-                        <li>Monitoramento contínuo de desempenho e resposta das APIs, resolvendo problemas de forma proativa para minimizar o impacto nos usuários.</li>
-                        <li>Administração e otimização de banco de dados SQL Server, incluindo criação, atualização e exclusão de tabelas e registros.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+            <div class="section-title">
+                <h2>Experiência Profissional</h2>
+            </div>
     
+            <div class="experience-list">
+                <h3>Agente Administrativo - IPREF Guarulhos (07/2024 - Atual)</h3>
+                <ul>
+                    <li>Auxílio no gerenciamento de contratos administrativos, garantindo o cumprimento dos prazos e das cláusulas contratuais.</li>
+                    <li>Colaboração em iniciativas para implementação de práticas de proteção de dados em ambientes digitais e físicos.</li>
+                </ul>
+    
+                <h3>Analista de Sistemas - Dogma Data (07/2021 - 07/2022)</h3>
+                <ul>
+                    <li>Monitoramento contínuo de desempenho e resposta das APIs, resolvendo problemas de forma proativa para minimizar o impacto nos usuários.</li>
+                    <li>Administração e otimização de banco de dados SQL Server, incluindo criação, atualização e exclusão de tabelas e registros.</li>
+                </ul>
+            </div>
+    
+        </div>
 
-    
-        
-    </section>
-
-    <footer>
-        <p>&copy; 2025 - Ingrith Reis</p>
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center py-3 mt-auto">
+        <p>&copy; 2025 MamaPlay Ingrith Reis | Todos os direitos reservados.</p>
     </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
 

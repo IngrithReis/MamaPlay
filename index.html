@@ -1,43 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="Content-Language" content="pt-br">
-    <title>MamaPlay</title>
+    <title>MamaPlay</Main></title>
+    <!-- Font Google -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Seu arquivo CSS (caso tenha) -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <img src="perfil.jpg" alt="Foto de Perfil" class="profile-image">
-        <div class="header-buttons">
-            <button onclick="window.location.href='index.html'">Sobre</button>
-            <button onclick="window.location.href='portifolio.html'">Portifólio</button>
-            <button onclick="window.location.href='curriculo.html'">Currículo</button>
-            <button onclick="window.location.href='app_politica.html'">Política</button>
+
+<body class="d-flex flex-column min-vh-100"> <!-- Garante que o body ocupe 100% da altura da tela -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="curriculo.html">Currículo</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="jogo.html">Jogo</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <section class="main-content">
+    <!-- Área de Conteúdo -->
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-md-4">
+                
+                <img src="./imagens/perfil.jpg" alt="Foto de Perfil" class="img-fluid rounded-circle">
+                <h1>Sobre mim</h1>
+                <p>Mãe e apaixonada por solucionar desafios com o auxílio da tecnologia</p>
+                <p>Comecei construindo minha jornada com desenvolvimentos de jogos na unity, após, fui aperfeiçoando conhecimentos
+                    em com .Net , utilizando a orientação a objetos do C# com consumo de banco de dados, assim, fui construindo também conhecimentosem SQL.
+                </p>
+            </div>
+            <div class="col-md-8">
+                <h2>Meus Certificados em Tecnologia</h2>
+                <div class="row">
+                    <!-- Certificado 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="certificate">
+                            <img src="./imagens/asp.jpg" alt="Certificado .Net" class="img-fluid rounded">
+                            <h4><a href="https://www.udemy.com/certificate/UC-0692c324-14a1-4a8d-b6cc-fe4957873036/" target="_blank" class="custom-link">Certificado .Net</a></h4>
+                        </div>
+                    </div>
+            
+                    <!-- Certificado 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="certificate">
+                            <img src="./imagens/Csharp.jpg" alt="Certificado C#" class="img-fluid rounded">
+                            <h4><a href="https://www.udemy.com/certificate/UC-560bee90-5fd2-4970-8ea5-abbf198092b8/" target="_blank" class="custom-link">Certificado C#</a></h4>
+                        </div>
+                    </div>
+            
+                    <!-- Certificado 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="certificate">
+                            <img src="./imagens/sql.jpg" alt="Certificado SQL" class="img-fluid rounded">
+                            <h4><a href="https://www.udemy.com/certificate/UC-0d9b0d22-6568-451e-ba3d-b03ae682f7fe/" target="_blank" class="custom-link">Certificado SQL</a></h4>
+                        </div>
+                    </div>
+                    <!-- Certificado 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="certificate">
+                            <img src="./imagens/Coisa boa -logo.jpg" alt="Logo de Projeto Senac" class="img-fluid rounded">
+                            <h4><a href="https://github.com/IngrithReis/Ingrith.CoisaBoa" target="_blank" class="custom-link">Projeto Senac, veja no GitHub</a></h4>
+                            <p> Este projeto foi desenvolvido em MVC para aquisição de nota no curso Análise e Desenvolvimento de Sistemas.
+                                Com ele, pude desenvolver uma aplicação para auxílio de pequenos restaurantes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="certificate">
+                            
+                            <img src="./imagens/capa.png" alt="Logo app Jogo" class="img-fluid rounded">
+                            <h4><a href="jogo.html" target="_blank" class="custom-link">Um pouco sobre meu jogo e livro</a></h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
         
-        <h1>Bem-vindo à minha página!</h1>
-            <p>Esta página é mais do que apenas um espaço na web — é um reflexo de coragem, determinação e a busca constante por evolução. Criada por uma <mark>mulher</mark> de 40 + anos,<mark> mãe, escritora e entusiasta da tecnologia </mark>, este é um recorte da jornada de alguém que decidiu se aventurar no mundo da programação, apesar de todos os desafios que a vida apresenta.</p>
-            <p>A ideia de explorar o universo da tecnologia surgiu do desejo de aprender, criar e transformar. Através de muito esforço e dedicação, o desenvolvimento de soluções se tornou um projeto pessoal e profissional que reflete o amor pela programação, inovação e, acima de tudo, a <mark>vontade de mostrar ao mundo que nunca é tarde para começar algo novo.</mark></p>
-            <p>Esta página não é apenas uma vitrine de conhecimentos adquiridos ao longo dessa jornada. Ela também serve como um portfólio, onde você pode conhecer melhor o trabalho realizado, as habilidades desenvolvidas e os projetos que estão sendo constantemente aperfeiçoados.</p>
-            <p><marK>Aqui, você vai encontrar </marK> não apenas exemplos de <mark> códigos </mark> e soluções, mas também a história de superação, <mark>lançamentos de livros e paixão por aquilo que se faz </mark>. A cada linha de código, há um pouco da minha história, um pouco da minha experiência e a prova de que os desafios podem ser superados quando nos entregamos ao que amamos.</p>
-            <p>Espero que ao navegar por aqui, <mark>você se inspire a seguir seus próprios sonhos</mark>, assim como eu encontrei a coragem para trilhar o meu caminho na programação e na escrita. Bem-vindo à minha página  (ou nossa se você aceitar) — um espaço onde a transformação e a inovação são alimentadas pela paixão por aprender e criar!</p>
-       
+    </div>
+
     
 
-    
-        
-    </section>
-
-    <footer>
-        <p>&copy; 2025 - Ingrith Reis</p>
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center py-3 mt-auto">
+        <p>&copy; 2025 MamaPlay Ingrith Reis | Todos os direitos reservados.</p>
     </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
 
