@@ -18,15 +18,20 @@ img.img-fluid.rounded-circle {
     object-fit: cover; /* Garante que a imagem seja cortada de forma proporcional */
     margin-bottom: 20px; /* Espaço abaixo da imagem */
 }
-.img-certificate{
-    width: 550px;
-    height: 5050px;
-    object-fit: cover; /* Garante que a imagem seja cortada de forma proporcional */
-    margin-bottom: 20px; /* Espaço abaixo da imagem */
+.img-certificate {
+    width: 200px; /* Tamanho inicial da imagem */
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
-
+    transition: transform 0.3s ease; /* Transição suave para o efeito de zoom */
 }
+
+.img-certificate:hover {
+    transform: scale(1.5); /* Aumenta a imagem quando o mouse passa sobre ela */
+}
+
 .img-border{
     margin-left: 20px;
 }

@@ -81,8 +81,9 @@
                     <div class="col-md-8 mb-4">
                         <div class="certificate">
                             <h4>certificado de Conclusão em ADS</h4>
+                            <h8>Clique na imagem para mais detalhes</h8>
                             <div class="img-border">
-                            <img src="./imagens/DiplomaADS_page-0001.jpg" alt="Certificado Análise e Desenvolvimento de Sistemas" class="img-certificate">
+                            <img src="./imagens/DiplomaADS_page-0001.jpg" alt="Certificado Análise e Desenvolvimento de Sistemas" class="img-certificate"  onclick="expandImage(this)">
                         </div>
                         </div>
                     </div>
@@ -90,8 +91,9 @@
                         <div class="col-md-8 mb-4">
                             <div class="certificate">
                                 <h4> Certificado em Gestão Hospitalar</h4>
+                                <h8>Clique na imagem para mais detalhes</h8>
                                 <div class="img-border">
-                                <img src="./imagens/GestaoHospitalar_page-0001.jpg" alt="Certificado Gestão Hospitalar" class="img-certificate">
+                                <img src="./imagens/GestaoHospitalar_page-0001.jpg" alt="Certificado Gestão Hospitalar" class="img-certificate" onclick="expandImage(this)">
                             </div>
                             </div>
                         </div>
@@ -133,6 +135,28 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+    function expandImage(imgElement) {
+        // Cria um efeito de ampliação para a imagem
+        const expandedImg = document.createElement("img");
+        expandedImg.src = imgElement.src;
+        expandedImg.style.position = "fixed";
+        expandedImg.style.top = "50%";
+        expandedImg.style.left = "50%";
+        expandedImg.style.transform = "translate(-50%, -50%)";
+        expandedImg.style.zIndex = "1000"; // Coloca a imagem ampliada no topo
+        expandedImg.style.maxWidth = "90%";
+        expandedImg.style.maxHeight = "90%";
+        expandedImg.style.boxShadow = "0px 0px 10px rgba(0, 0, 0, 0.5)";
+    
+        document.body.appendChild(expandedImg);
+    
+        // Adiciona evento de fechar ao clicar na imagem ampliada
+        expandedImg.onclick = function() {
+            document.body.removeChild(expandedImg);
+        };
+    }
+</script>
 </body>
 </html>
 
