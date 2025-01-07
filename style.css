@@ -19,8 +19,8 @@ img.img-fluid.rounded-circle {
     margin-bottom: 20px; /* Espaço abaixo da imagem */
 }
 .img-certificate{
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    height: 5050px;
     object-fit: cover; /* Garante que a imagem seja cortada de forma proporcional */
     margin-bottom: 20px; /* Espaço abaixo da imagem */
     margin-left: 20px;
